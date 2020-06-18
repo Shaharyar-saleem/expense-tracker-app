@@ -9,7 +9,7 @@ export const Balance = () => {
     return (
         <div>
             <h4>Your Balance</h4>
-             <h1 class={total < 0 ? 'negative-balance' : 'positive-balance'}>{total}</h1>
+             <h1 className={total < 0 ? 'negative-balance' : 'positive-balance'}>{total}</h1>
         </div>
     )
 }
