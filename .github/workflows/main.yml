@@ -22,14 +22,14 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: install node.js
-     uses: actions/setup-node@v2-beta
-     with:
-       version: 13
     - name: Setup Node.js environment
       uses: actions/setup-node@v2-beta
       with:
-        version: 13 
+        version: 13
+    - name: action-yarn
+      uses: Borales/actions-yarn@v2.1.0
+      with:
+        cmd: install  
     - name: creating build
       run: yarn build  
     - name: install surge
