@@ -15,7 +15,6 @@ export const AddTransaction = () => {
         Text,
         Amount: +Amount
      } 
-     console.log(newTransaction);
      addTransaction(newTransaction);
     }
 
