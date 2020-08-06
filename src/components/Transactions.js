@@ -7,7 +7,7 @@ const Transactions = (props) => {
     const { deleteTransaction } = useContext(GlobalContext);
     return (
         <div>
-          <li className={props.transaction.Amount < 0 ? 'minus' : 'plus'}><span>{props.transaction.currentDay}:{props.transaction.currentMonth}:{props.transaction.currentYear}</span><span>{props.transaction.currentHour}: {props.transaction.currentMinute}</span>
+          <li className={props.transaction.Amount < 0 ? 'minus' : 'plus'}>
               {props.transaction.Text} <span>{sign}${Math.abs(props.transaction.Amount)}</span><button onClick={() => deleteTransaction(props.transaction.id) } className="delete-btn">x</button>
           </li>
         </div>

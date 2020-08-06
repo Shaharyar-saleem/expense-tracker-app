@@ -5,13 +5,6 @@ import {GlobalContext} from '../Context/GlobalState';
 export const AddTransaction = () => {
     const [Text, setText] = React.useState('');
     const [Amount, setAmount] = React.useState(0);
-    const currentDate = new Date();
-    const currentMinute = currentDate.getMinutes();
-    const currentHour = currentDate.getHours();
-    const currentDay = currentDate.getDay();
-    const currentMonth = currentDate.getMonth();
-    const currentYear = currentDate.getFullYear();
-
     const { addTransaction} = useContext(GlobalContext);
     
     const onSubmit = e => {
@@ -19,11 +12,6 @@ export const AddTransaction = () => {
 
       const newTransaction = {
         id: Math.floor(Math.random() * 100000000),
-        currentMinute,
-        currentHour,
-        currentDay,
-        currentMonth,
-        currentYear,
         Text,
         Amount: +Amount
      } 
