@@ -1,0 +1,5 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { "namespace": "android_app", "package_name": "app.netlify.fervent_wozniak_4aca2c.twa",
+                 "sha256_cert_fingerprints": ["23:85:F7:27:F4:80:7E:5C:17:F8:4A:55:99:71:BB:70:B0:1D:21:1B:4A:EE:4D:26:7C:46:44:31:AC:1D:78:09"] }
+  }]
